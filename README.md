@@ -9,6 +9,7 @@
 
 ```text
 mixTCC/
+├── data/                               # Datasets
 ├── dataloader/                         # Dataloaders for different datasets
 ├── models/                             # Network architectures (Encoders, Projectors, Classifiers)
 ├── trainer/                            # Training and evaluation loops (Pre-train & Fine-tune)
