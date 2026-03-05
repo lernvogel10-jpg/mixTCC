@@ -14,9 +14,9 @@ mixTCC/
 ├── trainer/                            # Training and evaluation loops (Pre-train & Fine-tune)
 ├── main.py                             # Main entry point for running experiments
 ├── preprocess_epilepsy.py              # Data preprocessing for the Epilepsy dataset
-├── process_cwru_4class.py              # Data preprocessing for CWRU 4-Class task
-├── process_cwru_ball_severity.py       # Data preprocessing for CWRU Ball Severity task
-├── process_pFD_classify_5120-2560.py   # Data preprocessing & downsampling (5120->2560) for pFD 
+├── preprocess_cwru_4class.py              # Data preprocessing for CWRU 4-Class task
+├── preprocess_cwru_ball_severity.py       # Data preprocessing for CWRU Ball Severity task
+├── preprocess_pFD_classify_5120-2560.py   # Data preprocessing & downsampling (5120->2560) for pFD 
 ├── utils.py                            # Utility functions (logging, metrics, etc.)
 └── README.md                           # Project documentation
 ```
@@ -45,13 +45,13 @@ Before training, run the specific preprocessing script for your target dataset t
 python preprocess_epilepsy.py
 
 # For pFD dataset (includes downsampling 5120 -> 2560)
-python process_pFD_classify_5120-2560.py
+python preprocess_pFD_classify_5120-2560.py
 
 # For CWRU 4-Class dataset
-python process_cwru_4class.py
+python preprocess_cwru_4class.py
 
 # For CWRU Ball Severity dataset
-python process_cwru_ball_severity.py
+python preprocess_cwru_ball_severity.py
 ```
 2. Training and Evaluation
 The main.py script acts as the entry point for both pre-training the representations and fine-tuning them on downstream tasks.
