@@ -37,6 +37,19 @@ Includes custom resampling scripts (e.g., 64kHz to 32kHz / 5120 to 2560 length).
 
 Epilepsy: Epileptic Seizure Recognition dataset (EEG signals).
 
+## Data Availability and Official Downloads
+
+The full raw pFD and CWRU datasets are not included in this repository because of their size. Please download them directly from the original providers:
+
+| Dataset | Official download page |
+| --- | --- |
+| pFD (Paderborn University Bearing Dataset) | [Paderborn University Bearing DataCenter - Data Sets and Download](https://mb.uni-paderborn.de/en/kat/research/bearing-datacenter/data-sets-and-download) |
+| CWRU (Case Western Reserve University Bearing Dataset) | [CWRU Bearing Data Center - Download a Data File](https://engineering.case.edu/bearingdatacenter/download-data-file) |
+
+After downloading, place the raw files in the local folders expected by the preprocessing scripts and adjust the data paths for your environment. Follow the preprocessing commands in the Getting Started section to generate the training, validation, and test files.
+
+Please follow the original providers' data-use terms and cite the corresponding dataset publications.
+
 ## Getting Started
 1. Data Preprocessing
 Before training, run the specific preprocessing script for your target dataset to format the data and generate the .pt files.
@@ -81,3 +94,4 @@ Performance Metric: Macro F1-Score & Accuracy.
 
 📄 License
 This project is licensed under the terms of the LICENSE included in the repository.
+
